@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIPKART NAVBAR</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="flipkart.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-text"> <a href="index.html"><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt=""></a>
+            <div class="second">
+                Explore <span>Plus <img id="star" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt=""> </span>
+            </div>
+        </div>
+        <input type="text" placeholder="search for your products" name="" id=""><i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
+       
+       <ul id="navbar">
+        <a href="login.html"><li ><button id="login-btn">Login</button></li></a>
+        <li><a href="#">Become a seller</a></li>
+       
+        <li><div class="dropdown">
+            <button id="nav-btn" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">notification preference</a></li>
+              <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+              <li><a class="dropdown-item" href="#">advertise</a></li>
+              <li><a class="dropdown-item" href="#">Download App</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><i id="second-icon" class="fa fa-cart-arrow-down" aria-hidden="true"></i><a href="#">cart</a></li>
+       </ul>
+       <i  id="menu" class="fa fa-bars" aria-hidden="true" onclick="show()"></i>     
+        </div>
+    </nav>
+
+    <section class="product-list">
+        <div class="main-head1">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                Electronics
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  TV & Appliances
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  Men
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  Women
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  Baby & Kids
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  Home & Furniture
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  Sports, Books & More
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  Flights
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="flt-btn">
+                  Offer Zone
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">notification preference</a></li>
+                  <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                  <li><a class="dropdown-item" href="#">advertise</a></li>
+                  <li><a class="dropdown-item" href="#">Download App</a></li>
+                </ul>
+              </div>
+    
+    </div>
+    </section>
+    <hr>
+    <section class="overall">
+      
+      <div class="main-con">
+    <div class="pro-info">
+
+        <div class="left-images">
+            <img src="flipkart images/Vans.jpg" alt="">
+            <img src="flipkart images/vans1.jpg" alt="">
+            <img src="flipkart images/vans3.jfif" alt="">
+            <img src="flipkart images/Vans4.jpg" alt="">
+            <img src="flipkart images/vans.jfif" alt="">
+            <img src="flipkart images/vans6.webp" alt="">
+        </div>
+
+        <div class="right-image">
+            <img id="onlyvans" src="flipkart images/Vans.jpg" alt="">
+        </div>
+
+        <div class="heart">
+          <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+        </div>
+
+      </div>
+      <div class="buttons">
+      <button class="btn-1"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>ADD TO CART</span></button>
+      <a href="buynow.html"><button class="btn-2"><i class="fa fa-credit-card-alt" aria-hidden="true"></i><span>BUY NOW</span></button></a>
+      </div>
+    
+    </div>
+      <div class="pro-details-1">
+        <i class=" square fa fa-square-o" aria-hidden="true"></i> <span id="compare">compare</span>
+      <span id="share"><i class="fa fa-share" aria-hidden="true"></i>share</span><br>
+      <h4>Canon PIXMA E3370 Multi-function WiFi Color Inkjet Printer (Borderless Printing)  (Black, Ink Cartridge)</h4>
+      <p><span>3.9 </span>3,407 Ratings & 375 Reviews <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="" id="flipimg"></p>
+      <p>special Price</p>
+      <h5>Available Offers</h5>
+      <p class="para"> <strong>Bank Offer </strong>5% Cashback on Flipkart Axis Bank Card <span class="tc">T&C</span></p>
+      <p class="para">Buy this Product and Get Extra ₹500 Off on Two-Wheelers <span class="tc">T&C</span></p> 
+      <p class="para"> <strong>Partner Offer </strong>Sign up for Flipkart Pay Later and get Flipkart Gift Card worth up to ₹500* <span class="tc">T&C</span></p> 
+      <p class="para"> <strong>Combo Offer </strong>Buy 3 items save 3%; Buy 4 save 4%; Buy 5+ save 5% <span class="tc">T&C</span></p> 
+      <div class="shoe-colors">
+        <div class="shoe-img">
+          <span id="gray">color</span>
+          <img src="colors/color1.jpg" alt="">
+          <img src="colors/colors5.webp" alt="">
+          <img src="colors/colors3.jpeg" alt="">
+          <img src="colors/colors4.jpg" alt="">
+          <img src="colors/colors6.jpeg" alt="">
+          <span id="blue">+4 more</span>
+        </div>
+  </div>
+  <div class="shoe-size">
+    <span id="shoe-size">size - UK/India</span>
+    <strong>6</strong>
+    <strong>7</strong>
+    <strong>8</strong>
+    <strong>9</strong>
+    <strong>10</strong>
+  </div>
+</div>
+    </section>
+    
+    <footer>
+      <div class="main-footer">
+          <h6>ABOUT</h6>
+         <a href="#">Contact Us</a>
+         <a href="#">About Us</a>
+         <a href="#">Careers</a>
+         <a href="#">Flipkart Stories</a>
+         <a href="#">Press</a>
+         <a href="#">Flipkart Wholesale</a>
+         <a href="#">Corporate Information</a>
+      </div>
+
+      <div class="main-footer">
+          <h6>HELP</h6>
+         <a href="#">Payments</a>
+         <a href="#">Shipping</a>
+         <a href="#">Cancellations & Returns</a>
+         <a href="#">FAQ</a>
+         <a href="#">Report</a>
+         <a href="#">Infringement</a>
+      </div>
+
+      <div class="main-footer">
+          <h6>POLICY</h6>
+         <a href="#">Return Policy</a>
+         <a href="#">Terms of Use</a>
+         <a href="#">Security</a>
+         <a href="#">Privacy</a>
+         <a href="#">Sitemap</a>
+         <a href="#">EPR Compliance</a>
+      </div>
+
+      <div class="main-footer">
+          <h6>SOCIAL</h6>
+         <a href="#">facebook</a>
+         <a href="#">Twitter</a>
+         <a href="#">Youtube</a>
+      </div>
+      <div class="line"></div>
+      <div class="other-container">
+          <h6>Mail Us:</h6>
+         <p>Flipkart Internet Private Limited,
+          Buildings Alyssa, Begonia &
+          Clove Embassy Tech Village,
+          Outer Ring Road, Devarabeesanahalli Village,
+          Bengaluru, 560103,
+          Karnataka, India</p>
+      </div>
+
+      <div class="other-container">
+          <h6>Registered Office Address:</h6>
+              <p id="para-2">Flipkart Internet Private Limited,
+              Buildings Alyssa, Begonia &
+              Clove Embassy Tech Village,
+              Outer Ring Road, Devarabeesanahalli Village,
+              Bengaluru, 560103,
+              Karnataka, India
+              CIN : U51109KA2012PTC066107
+              Telephone: <a href="">044-45614700</a></p>
+      </div>
+  </footer>
+  <hr>
+  <div class="bottom-line">
+      <img src="	data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDov…idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K" alt="">
+  <h6>become a seller</h6>
+  <h6>Advertise</h6>
+  <h6>Gift Cards</h6>
+  <h6>Help center</h6>
+  <p>© 2007-2023 Flipkart.com</p>
+  <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
+  </div>
+</body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="flipkart.js"></script>
+
+</html>

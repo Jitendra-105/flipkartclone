@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLIPKART NAVBAR</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="flipkart.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-text">
+            <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png"
+                alt="">
+            <div class="second">
+                Explore <span>Plus <img id="star"
+                        src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png"
+                        alt=""> </span>
+            </div>
+        </div>
+        <input type="text" placeholder="search for your products" name="" id=""><i id="search-icon" class="fa fa-search"
+            aria-hidden="true"></i>
+
+
+        <ul id="navbar">
+
+            <!-- <li><input type="text" placeholder="search for your products" name="" id=""><i id="search-icon" class="fa fa-search" aria-hidden="true"></i></li> -->
+
+            <a href="login.html">
+                <li><button id="login-btn">Login</button></li>
+            </a>
+            <li><a href="#">Become a seller</a></li>
+
+            <li>
+                <div class="dropdown">
+                    <button id="nav-btn" class="btn btn-secondary dropdown-toggle" type="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">notification preference</a></li>
+                        <li><a class="dropdown-item" href="#">24x7 customer service</a></li>
+                        <li><a class="dropdown-item" href="#">advertise</a></li>
+                        <li><a class="dropdown-item" href="#">Download App</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li id="displayNone"><i id="second-icon" class="fa fa-cart-arrow-down" aria-hidden="true"></i><a
+                    href="#">cart</a></li>
+        </ul>
+        <i id="menu" class="fa fa-bars" aria-hidden="true" onclick="show()"></i>
+        <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+
+        <!-- </div> -->
+    </nav>
+
+    <section class="head">
+        <div class="head-img">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" alt="">
+            <a href="#">Grocery</a>
+        </div>
+        <div class="head-img">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" alt="">
+            <a href="#">Mobile</a>
+        </div>
+        <div class="head-img">
+            <img src="	https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100" alt=""
+                class="btn-img">
+            <div class="dropdown">
+                <button id="fashion-btn" class="btn btn-secondary dropdown-toggle" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Fashion
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Men's Top Wear <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i> </a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Men's Bottom Wear <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Women Ethnic <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">women Western <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Men Footwear <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Women Footwear <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Watches & Accessories <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Bag, Suitcases & luggage <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Kid <i class="fa fa-chevron-right"
+                                aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Essentials <i
+                                class="fa fa-chevron-right" aria-hidden="true"></i></a></li>
+                    <li><a class="dropdown-item" id="fashion-dropdown" href="#">Winters <i class="fa fa-chevron-right"
+                                aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head-img">
+            <img src="	https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt=""
+                class="btn-img">
+            <div class="dropdown">
+                <button id="fashion-btn" class="btn btn-secondary dropdown-toggle" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Electronics
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Electronic GST store</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Camera & Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">Computer Peripheral</a></li>
+                    <li><a class="dropdown-item" href="#">Gaming</a></li>
+                    <li><a class="dropdown-item" href="#">Health & Personal Care</a></li>
+                    <li><a class="dropdown-item" href="#">Women Footwear</a></li>
+                    <li><a class="dropdown-item" href="#">Laptop Accessories</a></li>
+                    <li><a class="dropdown-item" href="#">Laptop & Desktop</a></li>
+                    <li><a class="dropdown-item" href="#">Powerbank</a></li>
+                    <li><a class="dropdown-item" href="#">Smart Wearables</a></li>
+                    <li><a class="dropdown-item" href="#">storage</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="head-img">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" alt="">
+            <a href="#">Home</a>
+        </div>
+        <div class="head-img">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" alt="">
+            <a href="#">Appliances</a>
+        </div>
+        <div class="head-img">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" alt="">
+            <a href="#">Travel</a>
+        </div>
+        <div class="head-img">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+            <a href="#">Top offers</a>
+        </div>
+        <div class="head-img">
+            <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" alt="">
+            <a href="#">Beauty</a>
+        </div>
+        <div class="head-img">
+            <img src="	https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100
+            " alt="">
+            <a href="#">Two Wheeler</a>
+        </div>
+
+
+
+    </section>
+
+    <!-- Flickity HTML init -->
+    <div class="carousel" data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell"><img class="caro" src="flipkart images/caro1.jpg" alt=""></div>
+        <div class="carousel-cell"><img class="caro"
+                src="https://rukminim1.flixcart.com/fk-p-flap/844/140/image/7081b5abee4c9310.jpg?q=50" alt=""></div>
+        <div class="carousel-cell"><img class="caro" src="flipkart images/caro6.jpg" alt=""></div>
+        <div class="carousel-cell"><img class="caro" src="flipkart images/caro4.jpg" alt=""></div>
+        <!-- <div class="carousel-cell"></div> -->
+    </div>
+
+    <section id="section-1">
+        <div class="container">
+
+            <div class=" offer">
+                <span>Today's Offer</span>
+                <button>View all</button>
+            </div>
+            <div class="product-list">
+                <a href="productlist.html"><img
+                        src="	https://rukminim1.flixcart.com/image/400/400/xif0q/shoe/m/1/o/-original-imagkbyhyhgmgekr.jpeg?q=70"
+                        alt=""></a>
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="	https://rukminim1.flixcart.com/fk-p-flap/400/400/image/cd46065eae964e6a.jpg?q=70" alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="	https://rukminim1.flixcart.com/fk-p-flap/400/400/image/324eee4e5f645574.jpg?q=70" alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="	https://rukminim1.flixcart.com/image/200/200/xif0q/shoe/z/v/i/-original-imagg6r9tgyr9zau.jpeg?q=70"
+                    alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="flipkart images/shoe,jpg.jpg" alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="flipkart images/shoe,jpg.jpg" alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+        </div>
+    </section>
+    <!-- section 2 was created for mobile screen  -->
+    <section id="section-2">
+        <div class="container">
+
+            <div class=" offer">
+                <span>Today's Offer</span>
+                <button>View all</button>
+            </div>
+            <div class="product-list">
+                <a href="productlist.html"><img
+                        src="	https://rukminim1.flixcart.com/image/400/400/xif0q/shoe/m/1/o/-original-imagkbyhyhgmgekr.jpeg?q=70"
+                        alt=""></a>
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="	https://rukminim1.flixcart.com/fk-p-flap/400/400/image/cd46065eae964e6a.jpg?q=70" alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 3 was created for ipad screen  -->
+    <section id="section-3">
+        <div class="container">
+
+            <div class=" offer">
+                <span>Today's Offer</span>
+                <button>View all</button>
+            </div>
+            <div class="product-list">
+                <a href="productlist.html"><img
+                        src="	https://rukminim1.flixcart.com/image/400/400/xif0q/shoe/m/1/o/-original-imagkbyhyhgmgekr.jpeg?q=70"
+                        alt=""></a>
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="	https://rukminim1.flixcart.com/fk-p-flap/400/400/image/cd46065eae964e6a.jpg?q=70" alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+            <div class="product-list">
+                <img src="	https://rukminim1.flixcart.com/fk-p-flap/400/400/image/324eee4e5f645574.jpg?q=70" alt="">
+                <div class="product-details">Nike, skechers</div>
+                <div class="product-discount">Min 40% Off</div>
+                <div class="other-details">Men's Sport Shoes</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="beauty-section">
+        <div class="main-container">
+            <div class="beauty-detail">
+                <h3>Beauty Hot Picks</h3>
+                <h2>Up to <span>50% </span>Off</h2>
+                <p>face wash, acne remover</p>
+            </div>
+            <div class="beauty-img">
+                <img src="flipkart images/face wash.webp" alt="">
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="beauty-detail">
+                <h3>best Hair Products deal</h3>
+                <h2>Up to <span>40% </span>Off</h2>
+                <p>hair wax, drandruff remover...</p>
+            </div>
+            <div class="beauty-img">
+                <img src="flipkart images/hair product.jpg" alt="">
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="beauty-detail">
+                <h3>Moisturizers for winters</h3>
+                <h2>Up to <span>70% </span>Off</h2>
+                <p>Olay, nivea soft & many more brands..</p>
+            </div>
+            <div class="beauty-img">
+                <img src="flipkart images/moist.jpeg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="beauty-section">
+        <div class="main-container">
+            <div class="beauty-detail">
+                <h3>Beauty Hot Picks</h3>
+                <h2>Up to <span>50% </span>Off</h2>
+                <p>face wash, acne remover</p>
+            </div>
+            <div class="beauty-img">
+                <img src="flipkart images/one.jpeg" alt="">
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="beauty-detail">
+                <h3>best Hair Products deal</h3>
+                <h2>Up to <span>40% </span>Off</h2>
+                <p>hair wax, drandruff remover...</p>
+            </div>
+            <div class="beauty-img">
+                <img src="flipkart images/two.jpeg" alt="">
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="beauty-detail">
+                <h3>Moisturizers for winters</h3>
+                <h2>Up to <span>70% </span>Off</h2>
+                <p>Olay, nivea soft & many more brands..</p>
+            </div>
+            <div class="beauty-img">
+                <img src="flipkart images/three.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="main-footer">
+            <h6>ABOUT</h6>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
+            <a href="#">Flipkart Stories</a>
+            <a href="#">Press</a>
+            <a href="#">Flipkart Wholesale</a>
+            <a href="#">Corporate Information</a>
+        </div>
+
+        <div class="main-footer">
+            <h6>HELP</h6>
+            <a href="#">Payments</a>
+            <a href="#">Shipping</a>
+            <a href="#">Cancellations & Returns</a>
+            <a href="#">FAQ</a>
+            <a href="#">Report</a>
+            <a href="#">Infringement</a>
+        </div>
+
+        <div class="main-footer">
+            <h6>POLICY</h6>
+            <a href="#">Return Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Security</a>
+            <a href="#">Privacy</a>
+            <a href="#">Sitemap</a>
+            <a href="#">EPR Compliance</a>
+        </div>
+
+        <div class="main-footer">
+            <h6>SOCIAL</h6>
+            <a href="#">facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Youtube</a>
+        </div>
+        <div class="line"></div>
+        <div class="other-container">
+            <h6>Mail Us:</h6>
+            <p>Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India</p>
+        </div>
+
+        <div class="other-container">
+            <h6>Registered Office Address:</h6>
+            <p id="para-2">Flipkart Internet Private Limited,
+                Buildings Alyssa, Begonia &
+                Clove Embassy Tech Village,
+                Outer Ring Road, Devarabeesanahalli Village,
+                Bengaluru, 560103,
+                Karnataka, India
+                CIN : U51109KA2012PTC066107
+                Telephone: <a href="">044-45614700</a></p>
+        </div>
+    </footer>
+    <hr>
+    <div class="bottom-line">
+        <h6>become a seller</h6>
+        <h6>Advertise</h6>
+        <h6>Gift Cards</h6>
+        <h6>Help center</h6>
+        <p>© 2007-2023 Flipkart.com</p>
+        <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg"
+            alt="">
+    </div>
+</body>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="flipkart.js"></script>
+
+</html>
