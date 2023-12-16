@@ -8,21 +8,21 @@
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="flipkart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/flipkart.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <nav>
-        <div class="nav-text"> <a href="index.html"><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt=""></a>
+        <div class="nav-text"> <a href="/index/index.html"><img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt=""></a>
             <div class="second">
                 Explore <span>Plus <img id="star" src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/plus_aef861.png" alt=""> </span>
             </div>
         </div>
-        <input type="text" placeholder="search for your products" name="" id=""><i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
+        <input type="text" placeholder="search for your products" name="" id="search-bar"><i id="search-icon" class="fa fa-search" aria-hidden="true"></i>
        
        <ul id="navbar">
-        <a href="login.html"><li ><button id="login-btn">Login</button></li></a>
+        <a href="/registration/register.html"><li ><button id="login-btn">Login</button></li></a>
         <li><a href="#">Become a seller</a></li>
        
         <li><div class="dropdown">
@@ -37,10 +37,11 @@
             </ul>
           </div>
         </li>
-        <li><i id="second-icon" class="fa fa-cart-arrow-down" aria-hidden="true"></i><a href="#">cart</a></li>
+        <li class="cart-btn"><i id="second-icon" class="fa fa-cart-arrow-down" aria-hidden="true"></i><a href="/cart/cart.html">cart <span>0</span></a></li>
        </ul>
-       <i  id="menu" class="fa fa-bars" aria-hidden="true" onclick="show()"></i>     
-        </div>
+       <i  id="menu" class="fa fa-bars" aria-hidden="true" onclick="show()"></i>
+       <i class="fa-solid fa-x remove"></i>   
+        <!-- </div> -->
     </nav>
 
     <section class="product-list">
@@ -154,34 +155,37 @@
     <div class="pro-info">
 
         <div class="left-images">
-            <img src="flipkart images/Vans.jpg" alt="">
-            <img src="flipkart images/vans1.jpg" alt="">
-            <img src="flipkart images/vans3.jfif" alt="">
-            <img src="flipkart images/Vans4.jpg" alt="">
-            <img src="flipkart images/vans.jfif" alt="">
-            <img src="flipkart images/vans6.webp" alt="">
+            <img src="/flipkart images/vans.jpg" alt="" class="small-img">
+            <img src="/flipkart images/vans1.jpg" alt="" class="small-img">
+            <img src="/flipkart images/vans3.jfif" alt="" class="small-img">
+            <img src="/flipkart images/vans4.jpg" alt="" class="small-img">
+            <img src="/flipkart images/vans.jfif" alt="" class="small-img">
+            <img src="/flipkart images/vans6.webp" alt="" class="small-img">
         </div>
 
         <div class="right-image">
-            <img id="onlyvans" src="flipkart images/Vans.jpg" alt="">
+            <img id="onlyvans" src="/flipkart images/Vans.jpg" alt="">
         </div>
 
         <div class="heart">
-          <i id="heart" class="fa fa-heart-o" aria-hidden="true"></i>
+          <i id="heart" class="fa-regular fa-heart"></i>        
         </div>
 
       </div>
       <div class="buttons">
-      <button class="btn-1"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>ADD TO CART</span></button>
-      <a href="buynow.html"><button class="btn-2"><i class="fa fa-credit-card-alt" aria-hidden="true"></i><span>BUY NOW</span></button></a>
+        <button class="btn-1 addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>ADD TO CART</span></button>
+        <!-- <button class="btn-1 addToCart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>ADD TO CART</span></button> -->
+      <!-- <button class="btn-1"><i class="fa fa-shopping-cart" aria-hidden="true"></i><span>ADD TO CART</span></button> -->
+      <a href="/buynow/buynow.html"><button class="btn-2"><i class="fa fa-credit-card-alt" aria-hidden="true"></i><span>BUY NOW</span></button></a>
       </div>
     
     </div>
       <div class="pro-details-1">
         <i class=" square fa fa-square-o" aria-hidden="true"></i> <span id="compare">compare</span>
       <span id="share"><i class="fa fa-share" aria-hidden="true"></i>share</span><br>
-      <h4>Canon PIXMA E3370 Multi-function WiFi Color Inkjet Printer (Borderless Printing)  (Black, Ink Cartridge)</h4>
+      <h4 class="product-name-cart">Casual Black Vans for Men</h4>
       <p><span>3.9 </span>3,407 Ratings & 375 Reviews <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png" alt="" id="flipimg"></p>
+      <h6 class="pro-main-price">rs. 9,999</h6>
       <p>special Price</p>
       <h5>Available Offers</h5>
       <p class="para"> <strong>Bank Offer </strong>5% Cashback on Flipkart Axis Bank Card <span class="tc">T&C</span></p>
@@ -191,11 +195,11 @@
       <div class="shoe-colors">
         <div class="shoe-img">
           <span id="gray">color</span>
-          <img src="colors/color1.jpg" alt="">
-          <img src="colors/colors5.webp" alt="">
-          <img src="colors/colors3.jpeg" alt="">
-          <img src="colors/colors4.jpg" alt="">
-          <img src="colors/colors6.jpeg" alt="">
+          <img src="/colors/color1.jpg" alt="">
+          <img src="/colors/colors5.webp" alt="">
+          <img src="/colors/colors3.jpeg" alt="">
+          <img src="/colors/colors4.jpg" alt="">
+          <img src="/colors/colors6.jpeg" alt="">
           <span id="blue">+4 more</span>
         </div>
   </div>
@@ -281,8 +285,10 @@
   <p>© 2007-2023 Flipkart.com</p>
   <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/payment-method_69e7ec.svg" alt="">
   </div>
-</body>
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-<script src="flipkart.js"></script>
 
+  <script src="cart.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="/flipkart.js"></script>
+
+</body>
 </html>

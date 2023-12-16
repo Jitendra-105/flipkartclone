@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.image img {
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+}
+.product-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding-bottom: 6px;
+    font-weight: 400;
+}
+.product img {
+        width: 100px;
+        height: 130px;
+        object-fit: contain;   
+}
+.product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid black;
+    font-weight: 300;
+}
+.products-container {
+    width: 60%;
+    margin: 2rem auto;
+}
+.product-title {
+    width: 20%;
+}
+.product-img {
+    width: 30%;
+}
+.price {
+    width: 20%;
+}
+.quantity {
+    width: 20%;
+}
+.total {
+    width: 20%;
+}
+.product span {
+    width: 20%;
+}
+.removeItem {
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+  /* .removeItem:hover {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 25px; 
+}  */
+.cart-img {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+}
+.basketTotalContainer {
+    padding-left: 2.7rem;
+    margin-top: 5px;
+    border-bottom: 1px solid black;
+}
+.basketTotalTitle {
+    font-size: 14px;
+    display: inline-block;
+}
+.basketTotal {
+    font-size: 14px;
+    display: inline;
+}
+
+/* --------------------------------------- for small screens----------------------------------------- */
+
+@media screen and (max-width: 429px) {
+    .products-container {
+        width: 100%;
+        margin: 6px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .product-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        border-bottom: none;
+        text-align: start;
+        padding-bottom: 6px;
+        font-weight: 400;
+        width: 30%;
+        height: 30vh;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .products {
+        width: 70%;
+        height: 30vh;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .product {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        border-bottom: none;
+        font-weight: 300;
+        flex-direction: column;
+        border: none;
+        width: 100%;
+    }
+    .product-title {
+        width: 100%;
+        height: 4vh;
+        border-bottom: 1px solid black;
+    }
+    .product-img {
+        width: 100%;
+        height: 6vh;
+        object-fit: contain;
+        border-bottom: 1px solid black;
+    }
+    .product img {
+        height: 81%;
+        object-fit: contain;
+        position: relative;
+        right: 83px;
+    }
+    .price {
+        width: 100%;
+        height: 4vh;
+        border-bottom: 1px solid black;
+    }
+    .quantity {
+        width: 100%;
+        height: 4vh;
+        border-bottom: 1px solid black;
+    }
+    .total {
+        width: 100%;
+        height: 4vh;
+        border-bottom: 1px solid black;
+    }
+    .product span {
+        width: 100%;
+    }
+    .pro-name {
+        width: 100%;
+        height: 4vh;
+        border-bottom: 1px solid black;
+    }
+    .removeItem {
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    .cart-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .6rem;
+        height: 6vh;
+        border-bottom: 1px solid black;
+    }
+    .basketTotalContainer {
+        padding-left: 2.7rem;
+        margin-top: 5px;
+        border-bottom: none;
+    }
+}

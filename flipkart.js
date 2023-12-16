@@ -1,53 +1,121 @@
+// To show nav menu on small screen devices 
 function show() {
+  // const removeMenu = document.querySelector(".remove");
+  const showMenu = document.querySelector("#menu");
+  const nav = document.getElementById("navbar")
 
-  document.getElementById("navbar").classList.toggle("active")
-
+  nav.classList.toggle("active")
+  if (nav.classList.contains("active")) {
+    showMenu.classList.remove("fa-bars");
+    showMenu.classList.add("fa-x");
+  } else {
+    showMenu.classList.remove("fa-x");
+    showMenu.classList.add("fa-bars");
+  }
 }
 
-// note  below code was written before we added product-content div in our html file 
 
-//  // Get the search input element
-//  const searchInput = document.getElementById('search-bar');
-//  // Get the product wrapper
-//  const productWrapper = document.getElementById('product-wrapper');
-//  // Get all product containers
-//  const productContainers = productWrapper.querySelectorAll('.pro-container');
+// To change the main images when clicked on small images 
+const smallImg = document.querySelectorAll(".small-img")
+const mainImg = document.querySelector("#onlyvans")
 
-//  // Add event listener to the search input
-//  searchInput.addEventListener('input', function () {
-//    const searchText = searchInput.value.toLowerCase();
+smallImg.forEach((currentImg) => {
+  currentImg.addEventListener("click", (e) => {
+    let spec = e.target.src;
+    mainImg.src = spec;
+  })
+})
 
-//    // Loop through each product container and toggle visibility based on search text
-//    productContainers.forEach(container => {
-//      const productName = container.querySelector('.product-name').textContent.toLowerCase();
-//      if (productName.includes(searchText)) {
-//        container.style.display = 'block' ;
-//      } else {
-//        container.style.display = 'none';
-//      }
-//    });
-//  });
+// // to add the product to the cart 
+
+// const product =  {
+//     name: "Black Vans",
+//     tag: "Vans",
+//     price: 1000,
+//     inCart: 0,
+//   }
 
 
-// this code was written after we use product-coantiner div so refer this code 
+// const cartBtn = document.querySelectorAll(".addToCart")
 
-const searchInput = document.getElementById('search-bar');
-const productContainers = document.querySelectorAll('.pro-container');
-// const productContainers = document.querySelectorAll('.product-content'); =>  we can use this code as well but output will be appeared vertically but we want our product to be displayed horizontally hence used above code
- 
-// Add event listener to the search input
-searchInput.addEventListener('input', function () {
-  const searchText = searchInput.value.toLowerCase();
+// // Loop through each button and add the event listener
+// cartBtn.forEach((button) => {
+//   button.addEventListener("click", () => {
+//     numberOfItems(product);
+//     totalCost(product)
+//   });
+// });
 
-  // Loop through each product container and toggle visibility based on search text
-  productContainers.forEach(container => {
-    const productName = container.querySelector('.product-name').textContent.toLowerCase();
-    if (productName.includes(searchText)) {
-      container.style.display = 'block';
-    } else {
-      container.style.display = 'none';
-    }
-  });
-      searchText.innerHTML = " "
-});
+// // To store the counts 
+// function numberOfItems(product) {
+//   let itemCount = parseInt(localStorage.getItem("cartNumbers"));
+//   if (itemCount) {
+//     localStorage.setItem("cartNumbers", itemCount + 1);
+//     document.querySelector(".cart-btn span").textContent = itemCount + 1;
+//   } else {
+//     localStorage.setItem("cartNumbers", 1)
+//     document.querySelector(".cart-btn span").textContent = 1;
+//   }
+//   setItems(product)
+// }
 
+// // to store the counts on web page 
+// function onLoadItemCount() {
+//   let itemCount = parseInt(localStorage.getItem("cartNumbers"));
+//   if (itemCount) {
+//     document.querySelector(".cart-btn span").textContent = itemCount;
+//   }
+// }
+// onLoadItemCount();
+
+// // To store the item in the localStorage 
+// function setItems(product) {
+//   let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || {};
+
+//   if (cartItems[product.tag] === undefined) {
+//     cartItems[product.tag] = { ...product, inCart: 1 };
+//   } else {
+//     cartItems[product.tag].inCart += 1;
+//   }
+//   localStorage.setItem("productsInCart", JSON.stringify(cartItems));
+// }
+
+
+// // To store and calculate total cost 
+// function totalCost(product) {
+//   let cartCost = parseInt(localStorage.getItem("totalCost")) || 0; // Initialize as 0 if null
+
+//   localStorage.setItem("totalCost", cartCost + product.price);
+// }
+
+// function displayCart() {
+//   let cartItems = localStorage.getItem("productsInCart");
+//   let cartCost = localStorage.getItem("totalCost")
+//   cartItems = JSON.parse(cartItems);
+//   console.log(cartItems);
+//   let productContainer = document.querySelector(".products");
+
+//   if(cartItems && productContainer) {
+//       productContainer.innerHTML = '';
+//       Object.values(cartItems).map(item => {
+//           productContainer.innerHTML += `
+//           <div class="product">
+//           <span class="pro-name">${item.name}</span>
+//           <div class="cart-img">
+//           <span class="removeItem">x</span>
+//           <img src="/flipkart images/${item.tag}.jpg" alt="">
+//           </div>
+//       <div class ="price">${item.price}</div>
+//       <div class ="quantity">${item.inCart}</div>
+//       <div class ="total">${item.inCart * item.price}</div>
+//   </div>
+//           `
+//       })
+//       productContainer.innerHTML += `
+//       <div class="basketTotalContainer">
+//       <h4 class="basketTotalTitle">Basket Total: </h4>
+//       <h4 class="basketTotal">${cartCost}</h4>
+//   </div>`
+//   }
+// }
+// displayCart()

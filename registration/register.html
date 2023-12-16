@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/flipkart.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="main-div">
+    <div class="login-left">
+    <h1>Looks like <br> you're new <br> here!</h1>
+    <h4>Sign up with your mobile number to get started</h4>
+    </div>
+    
+    <div class="login-right">
+        <div class="right-info">
+            <div class="input-box">
+                <input type="text" name="name" id="name" placeholder="Jitendra Yadav"> <span id="nameErr"></span>
+            </div>
+            <div class="input-box">
+                <input type="email" name="email" class="email" placeholder="Jitendra@gmail.com"> <span class="emailErr"></span>
+            </div>
+            <div class="input-box">
+            <input type="password" name="password" class="password" placeholder="create your pasword"> 
+            <div class="icon-container">
+                <i class="fa-solid fa-eye showPassword"></i>
+                <i class="fa-solid fa-eye-slash hidePassword"></i>
+            </div>
+            <span class="passErr"></span>
+            </div>
+            <div class="input-box">
+            <input type="password" name="repeatPassword" id="repeatPassword" placeholder="repeat password"> <span id="repeatErr"></span>
+            </div>
+   
+    <p>By continuing, you agree to Flipkart's <span> Terms of Use</span> and <span>Privacy Policy.</span></p>
+    <a href="/registration/register.html"><button id="continue" class="register">Register</button></a>
+    <div class="remarks"></div>
+    <a href="/login/login.html"><button id="existing-user">Already a user? Login</button></a>
+</div>
+</div>
+</div>
+
+<!-- <script src="/flipkart.js"></script> -->
+<script src="/registration/registration.js"></script>
+</body>
+</html>

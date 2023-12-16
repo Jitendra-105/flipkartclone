@@ -107,7 +107,9 @@ nav #menu {
     padding: 10px 40px;
     color: blue;
 }
-
+.remove {
+    display: none
+}
 #nav-btn {
     background-color: #2874f0;
     color: white;
@@ -701,12 +703,10 @@ button.btn-2 {
 div.main-div {
     display: flex;
     height: 100vh;
-
     border: 2px solid black;
     background-image: linear-gradient(purple, orangered);
     align-items: center;
     justify-content: center;
-    /* border-radius: 4px; */
 }
 
 .login-left {
@@ -1003,6 +1003,67 @@ div.main-div {
     padding: 20px;
     color: green;
 }
+.showPassword {
+    display: none;
+}
+.input-box {
+    position: relative;
+}
+.icon-container {
+    position: absolute;
+    bottom: 1.3rem;
+    right: .5rem;
+}
+.input-box input:focus + .icon-container {
+    bottom: 2.5rem; /* Adjust this value as needed */
+}
+.remarks {
+    color: red;
+    text-align: center;
+}
+/*---------------------------------------------           Cart Page ---------------------------------------------------------*/
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: 6rem;
+    margin-top: 6rem;
+    box-shadow: 3px 3px 6px whitesmoke;
+    padding: 6px;
+}
+.sub-cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sub-cart img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+.pro-count {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cart-count {
+    margin-left: .5rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+.remove-cart-item {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
 
 /* responsive design for ipad screens */
 /* index page  */
@@ -1048,7 +1109,7 @@ div.main-div {
     #login-btn {
         padding: 6px 28px;
     }
-
+  
     ul a {
         font-size: 1.0rem;
     }
@@ -1240,7 +1301,6 @@ div.main-div {
 
     .main-footer a {
         color: white;
-        text-decoration: ;
         font-size: 9px;
         padding-top: 6px;
         margin-left: 10px;
@@ -1285,7 +1345,11 @@ div.main-div {
         left: -18px;
         top: 2px;
     }
-
+    /* .remove {
+        display: inline-block;
+        color: white;
+        font-size: 13px;
+    } */
     nav ul a {
         color: white;
     }
@@ -1869,3 +1933,29 @@ div.main-div {
         font-size: 9px;
     }
 }
+/* ------------------------------------register responsive------------------------------ */
+@media screen and (max-width: 811px) {
+    .login-left {
+        width: 30%;
+    }
+    .login-right {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 429px) {
+    div.main-div {
+        flex-direction: column;
+    }
+    .login-left {
+        height: 33%;
+        width: 100%;
+    }
+    .login-right {
+        height: 67%;
+        width: 100%;
+    }
+}
+
+    
+
+
