@@ -75,7 +75,7 @@ function displayCart() {
           <span class="pro-name">${item.name}</span>
           <div class="cart-img">
           <span class="removeItem">x</span>
-          <img src="../flipkart images/${item.tag}.jpg" alt="">
+          <img src="../flipkart images/${item.tag}.jpg" alt="vans img">
           </div>
       <div class ="price">${item.price}</div>
       <div class ="quantity">${item.inCart}</div>
