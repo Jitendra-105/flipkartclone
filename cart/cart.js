@@ -2,7 +2,7 @@
 
 const product =  {
     name: "Black Vans",
-    tag: "vans",
+    tag: "newvans",
     price: 1000,
     inCart: 0,
   }
