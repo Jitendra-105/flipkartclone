@@ -2,7 +2,7 @@
 
 const product =  {
     name: "Black Vans",
-    tag: "Vans",
+    tag: "newvans",
     price: 1000,
     inCart: 0,
   }
@@ -64,7 +64,6 @@ function displayCart() {
   let cartItems = localStorage.getItem("productsInCart");
   let cartCost = localStorage.getItem("totalCost")
   cartItems = JSON.parse(cartItems);
-  console.log(cartItems);
   let productContainer = document.querySelector(".products");
 
   if(cartItems && productContainer) {
@@ -91,3 +90,4 @@ function displayCart() {
   }
 }
 displayCart()
+

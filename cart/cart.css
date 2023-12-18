@@ -94,7 +94,11 @@
     font-size: 14px;
     display: inline;
 }
-
+.quantity span {
+    margin-right: 6px;
+    font-size: 12px;
+    cursor: pointer;
+}
 /* --------------------------------------- for small screens----------------------------------------- */
 
 @media screen and (max-width: 429px) {
