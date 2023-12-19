@@ -8,21 +8,30 @@
 }
 
 /* Style for the product content wrapper */
-.product-content {
+.products-wrapper {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    margin-bottom: 10px;
-    width: 98%;
-  }
-  
+    flex-wrap: wrap;
+}
+.product-content {
+    margin: 2rem;
+}
   .product-content img {
      max-width: 300px; 
      height: auto; 
     margin-right: 10px;
   }
-  
+  .product-name {
+    font-size: 1.3rem;
+  }
+  .pro-price h3 {
+    font-size: 1rem;
+  }
+  .pro-price p {
+    font-size: .9rem;
+    font-weight: 500;
+}
 /* nav baar  */
 nav {
     background-color: #2874f0;
@@ -469,7 +478,9 @@ hr {
 .sub-details p {
     margin-bottom: 10px;
 }
-
+.top-details h6, h5, p {
+    cursor: pointer;
+}
 .top-details h5,
 h6 {
     margin-top: 6px;
@@ -481,22 +492,22 @@ h6 {
 }
 
 .pro-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: top;
-
+   box-shadow: 2px 2px 10px 2px whitesmoke;
+   margin-top: 1rem;
+   margin-right: 1rem;
+   width: 19vw;
 }
 
 .pro-container img {
-    height: 230px;
-    width: 230px;
+    height: 180px;
+    width: 180px;
     object-fit: contain;
 }
 
 #right-image {
     height: 20px;
-    width: 80px;
-    margin-left: 20px;
+    width: 51px;
+    margin-left: 10px;
 }
 
 /* pro- info  */
@@ -610,11 +621,11 @@ button.btn-2 {
 
 /* .filters #flt-bt */
 .wrapper {
-    width: 83%;
+    width: 94%;
     margin-left: 10px;
     box-shadow: 2px 2px 10px 4px lightgray;
+    margin: 1rem auto;
 }
-
 #top-line {
     border-color: black;
     margin: 0;
