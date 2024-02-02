@@ -96,10 +96,6 @@ nav input {
     margin-left: 20px;
 }
 
-/* ul li input i {
-    position: absolute;
-    left: 40px;
-} */
 #search-icon {
     position: relative;
     right: 25px;
@@ -1017,6 +1013,9 @@ div.main-div {
 .showPassword {
     display: none;
 }
+.hidePassword {
+    display: none;
+}
 .input-box {
     position: relative;
 }
@@ -1078,7 +1077,8 @@ div.main-div {
 
 /* responsive design for ipad screens */
 /* index page  */
-@media screen and (max-width: 811px) {
+@media screen and (max-width: 1281px) {
+/* @media screen and (max-width: 811px) { */
     .nav-text img {
         width: 68px;
         height: 30px;
@@ -1330,7 +1330,7 @@ div.main-div {
 /* responsive design for mobile screens */
 /* index page  */
 
-@media screen and (max-width: 429px) {
+@media screen and (max-width: 541px) {
     .nav-text img {
         width: 45px;
         height: 30px;
@@ -1353,14 +1353,11 @@ div.main-div {
     }
 
     #search-icon {
-        left: -18px;
+        left: -40px;
         top: 2px;
+        font-size: .8rem;
     }
-    /* .remove {
-        display: inline-block;
-        color: white;
-        font-size: 13px;
-    } */
+   
     nav ul a {
         color: white;
     }
@@ -1374,7 +1371,6 @@ div.main-div {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        /* z-index: 10; */
         height: 100vh;
         width: 50%;
         background-color: rgba(0, 0, 0, 0.885);
@@ -1382,7 +1378,6 @@ div.main-div {
         top: 0;
         right: 0;
         bottom: -250px;
-        /* margin: 20px 0px; */
     }
 
     nav #menu {
@@ -1613,7 +1608,6 @@ div.main-div {
     .nav-text img {
         width: 40px;
         height: 15px;
-        /* object-fit: contain; */
     }
 
     .second {
@@ -1626,24 +1620,12 @@ div.main-div {
         width: 7px;
     }
 
-    #search-icon {
-        left: -18px;
-        top: 2px;
-        font-size: 12px;
-    }
-
     nav #menu {
-        /* display: block;
-        color: white;
-        position: relative;
-        right: 17px; */
         font-size: 17px;
-        /* z-index: 1000; */
     }
 
     nav input {
         width: 227px;
-        /* margin-left: -15px; */
         height: 28px;
         font-size: 12px;
     }
@@ -1958,13 +1940,22 @@ div.main-div {
         flex-direction: column;
     }
     .login-left {
-        height: 33%;
-        width: 100%;
+       display: none;
     }
     .login-right {
-        height: 67%;
-        width: 100%;
+        height: 70%;
+        width: 96%;
     }
+    .right-info p {
+        padding: 0 30px;
+        margin: 20px 0px 6px 0px;
+        width: 100%;
+        font-size: 14px;
+    }
+    .login-style {
+        margin-top: 1rem;
+    }
+   
 }
 
     

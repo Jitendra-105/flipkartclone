@@ -42,31 +42,23 @@ LoginBtn.addEventListener("click", (e) => {
         remarks.innerText = "please create strong password"
       }  else {
         remarks.innerText = ""
-        window.location.href = "/main/index.html"; 
+        window.location.href = "../main/index.html"; 
       }
 })
 
 const showPassword = document.querySelector(".showPassword");
 const hidePassword = document.querySelector(".hidePassword")
 const iconContainer = document.querySelector(".icon-container")
+
 hidePassword.addEventListener("click", () => {
-  if(passField.type === "password" ) {
-    passField.type = "text"
-    hidePassword.style.display = "none"
-    showPassword.style.display = "block"
-  } else {
-    passField.type = "password"
-  }
-})
+  passField.type = "text";
+  hidePassword.style.display = "none";
+  showPassword.style.display = "block";
+});
 
 // To hide the Password 
 showPassword.addEventListener("click", () => {
-  if(passField.type === "text" ) {
-    passField.type = "password"
-    hidePassword.style.display = "block"
-    showPassword.style.display = "none"
-  } else {
-    passField.type = "text"
-  }
-   
-  })
+  passField.type = "password";
+  hidePassword.style.display = "block";
+  showPassword.style.display = "none";
+});
