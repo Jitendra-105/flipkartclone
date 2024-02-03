@@ -1,0 +1,375 @@
+.overall {
+    display: flex;
+    justify-content: center;
+}
+
+.main-con {
+    width: 35%;
+    border-right: 1px solid lightgray;
+    box-shadow: 0px 0px 10px 1px lightgray;
+}
+
+.pro-info {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.pro-info i {
+    margin: 10px;
+    display: block;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.left-images {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.left-images img {
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+}
+
+.left-images img:hover {
+    border: 2px solid blue;
+}
+
+#heart {
+    border: 2px solid black;
+    position: relative;
+    top: 6px;
+    left: 0px;
+    border-radius: 50%;
+    padding: 10px;
+    border-color: lightgray;
+    background-color: whitesmoke;
+    color: gray;
+    cursor: pointer;
+}
+
+
+#onlyvans {
+    height: 75%;
+    width: 100%;
+    object-fit: contain;
+    position: relative;
+    top: 61px;
+    left: 30px;
+}
+
+.buttons {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+button {
+    margin: 0px 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.buttons button i {
+    padding: 10px;
+}
+
+button.btn-1 {
+    background-color: #ffe11b;
+    width: 45%;
+    height: 60px;
+
+}
+
+button.btn-2 {
+    background-color: #ff9f00;
+    width: 45%;
+    height: 60px;
+}
+
+.shoesdetails {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    width: 15%;
+    margin-left: 10px;
+    box-shadow: 0px 1px 10px 4px lightgray;
+}
+
+.pro-details-1 {
+    width: 55%;
+    margin-left: 20px;
+    border-left: 1px solid lightgray;
+    padding: 20px 0px 0px 30px;
+    box-shadow: 0px 0px 10px 1px lightgray;
+}
+
+.pro-details-1 img {
+    height: 22px;
+    width: 75px;
+}
+
+.pro-details-1 p span {
+    color: blue;
+}
+
+.pro-details-1 #share {
+    float: right;
+}
+
+.pro-details-1 #share i {
+    margin-right: 8px;
+    color: lightgray;
+}
+
+.shoe-colors {
+    margin: 20px 30px 0 0;
+}
+
+.shoe-img img {
+    width: 85px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.shoe-img #gray {
+    color: gray;
+}
+
+.shoe-img #blue {
+    color: blue;
+}
+
+.shoe-size {
+    margin-top: 20px;
+}
+
+.shoe-size strong {
+    border: 1px solid lightgray;
+    padding: 10px 18px;
+    box-shadow: 0px 0px 1.5px 0px;
+    margin-right: 10px;
+}
+
+#share {
+    position: relative;
+    right: 20px;
+}
+
+#compare {
+    position: absolute;
+    right: 175px;
+}
+
+.square {
+    position: absolute;
+    right: 250px;
+    top: 171px;
+}
+@media screen and (max-width: 541px) { 
+    
+}
+/* ------------------------------------------------ small screens ----------------------------------------------  */
+
+@media screen and (max-width: 541px) {
+    .left-images {
+        margin-top: 7px;
+    }
+
+    .left-images img {
+        height: 25px;
+        width: 25px;
+        object-fit: contain;
+    }
+
+    section.overall {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .main-con {
+        width: 30%;
+        margin-left: 6px;
+    }
+
+    #heart {
+        border: 2px solid black;
+        position: relative;
+        top: 0px;
+        left: -33px;
+        border-radius: 50%;
+        padding: 4px;
+        border-color: lightgray;
+        background-color: whitesmoke;
+        color: gray;
+        cursor: pointer;
+        font-size: 9px;
+    }
+
+    #onlyvans {
+        height: 61px;
+        width: 60px;
+        object-fit: contain;
+        position: relative;
+        top: 58px;
+        left: 2px;
+    }
+
+    button.btn-1 i {
+        padding: 1px;
+        font-size: 6px;
+        margin-right: 1px;
+    }
+
+    .btn-1 span {
+        font-size: 5px;
+    }
+
+    button.btn-2 i {
+        padding: 1px;
+        font-size: 6px;
+        margin-right: 1px;
+
+
+    }
+
+    .btn-1 span {
+        font-size: 5px;
+        margin: 0px;
+    }
+
+    button.btn-1,
+    button.btn-2 {
+        font-size: 6px;
+        font-family: 800;
+        color: white;
+        margin: 0px;
+    }
+
+    button.btn-1 {
+        height: 21px;
+        width: 45%;
+        margin-left: 3px;
+    }
+
+    button.btn-2 {
+        height: 21px;
+        width: 45%;
+        margin: 0px;
+    }
+
+    .buttons a {
+        width: 51%;
+        font-size: 7px;
+    }
+
+    .pro-details-1 {
+        width: 65%;
+        margin-left: 4px;
+        border-left: 1px solid lightgray;
+        padding: 20px 2px 0px 10px;
+        position: relative;
+    }
+
+    .pro-details-1 h4 {
+        font-size: 13px;
+    }
+
+    .pro-details-1 #share i {
+        margin-right: 8px;
+        color: lightgray;
+        position: relative;
+        top: 1.5px;
+    }
+
+    .square {
+        position: absolute;
+        right: 121px;
+        top: 16px;
+        font-size: 10px;
+    }
+
+    #compare {
+        position: absolute;
+        font-size: 10px;
+        top: 12px;
+        right: 74px;
+    }
+
+    #share {
+        position: relative;
+        right: 13px;
+        font-size: 10px;
+        bottom: 7px;
+    }
+
+    .pro-details-1 p {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+
+    .pro-details-1 p span {
+        font-size: 10px;
+    }
+
+    #flipimg {
+        height: 8px;
+        width: 28px;
+        object-fit: contain;
+    }
+
+    .pro-details-1 img {
+        height: 30px;
+        width: 21px;
+        margin-right: 1px;
+    }
+
+    .pro-details-1 h5 {
+        font-size: 12px;
+        margin: 8px 0px;
+        font-weight: 600;
+    }
+
+    p.para {
+        font-size: 8px;
+        margin-bottom: 12px;
+    }
+
+    .pro-details-1 p .tc {
+        font-size: 8px;
+    }
+
+    #gray {
+        color: gray;
+        font-size: 11px;
+    }
+
+    #blue {
+        color: blue;
+        font-size: 7px;
+    }
+
+    .shoe-size {
+        margin-top: 6px;
+        margin-bottom: 10px;
+    }
+
+    #shoe-size {
+        font-size: 8px;
+    }
+
+    .shoe-size strong {
+        border: 1px solid lightgray;
+        padding: 1px 7px;
+        box-shadow: 0px 0px 1.5px 0px;
+        margin-right: 3px;
+        font-weight: 600;
+        font-size: 9px;
+    }
+}

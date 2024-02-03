@@ -1,0 +1,140 @@
+#sect {
+    display: none;
+}
+
+.product-list {
+    background-color: white;
+    cursor: pointer;
+    margin: 10px 10px 20px 0px;
+}
+
+.main-head1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px 1px lightgray;
+    padding: 6px 0px;
+}
+
+.main-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 2px 2px 20px 6px lightgray;
+    padding: 6px 0px;
+}
+
+.main-head a {
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    border: none;
+}
+
+#listbtn {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.699);
+    background-color: white;
+    font-weight: 600;
+}
+
+#flt-btn1 {
+    background-color: white;
+    color: black;
+}
+
+.dropdown button:hover {
+    color: blue;
+    background-color: white;
+}
+
+#flt-btn {
+    background-color: white;
+    color: black;
+}
+
+#flt-btn:hover {
+    color: blue;
+
+}
+
+.top-details h6,
+h5,
+p {
+    cursor: pointer;
+}
+
+.top-details h5,
+h6 {
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.filters h5 {
+    margin: 6px;
+}
+
+/* ------------------------------------------------------ ipad screen --------------------------------  */
+
+@media screen and (max-width: 1281px) {
+.product-list {
+    background-color: white;
+    cursor: pointer;
+    margin: 10px 10px 20px 0px;
+    width: 100%;
+}
+.main-head {
+    gap: 2px;
+}
+#listbtn {
+    font-size: 9px;
+    margin: 0px;
+}
+.more {
+    margin-left: 6px;
+    font-size: 13px;
+}
+
+.top-details h6 {
+    font-size: 13px;
+}
+
+.top-details h5 {
+    font-size: 12px;
+}
+
+.top-details p {
+    font-size: 13px;
+}
+}
+
+/* -------------------------------- small screens ------------------------- */
+@media screen and (max-width: 541px) {
+.top-details h5,
+h6 {
+    font-size: 7px;
+    margin-top: 6px;
+}
+
+.sub-details p {
+    margin-bottom: 5px;
+    font-size: 7px;
+}
+
+.main-head {
+    gap: 0px;
+    padding: 0px 0px;
+}
+
+#listbtn {
+    font-size: 5px;
+    font-weight: 700;
+    margin: 3.5px;
+    padding: 0px;
+}                       
+}
+

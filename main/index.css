@@ -1,0 +1,270 @@
+nav {
+    background-color: #2874f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-text {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav-text img {
+    width: 110px;
+    height: 36px;
+    object-fit: contain;
+}
+
+.second {
+    display: inline-block;
+    position: absolute;
+    top: 36px;
+    left: 30px;
+    color: white;
+}
+
+.second span {
+    color: gold;
+}
+
+.second img {
+    width: 11px;
+    position: relative;
+    top: -4px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    right: 40px;
+}
+
+ul li {
+    list-style: none;
+}
+
+nav input {
+    width: 60%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+#search-icon {
+    position: relative;
+    right: 25px;
+    top: -1px;
+    cursor: pointer;
+    color: blue;
+}
+
+nav #menu {
+    display: none;
+}
+
+#login-btn {
+    padding: 10px 40px;
+    color: blue;
+}
+
+.remove {
+    display: none
+}
+
+#nav-btn {
+    background-color: #2874f0;
+    color: white;
+    border: none;
+}
+
+.dropdown button:hover {
+    background-color: #2874f0;
+}
+
+ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+li i {
+    color: blue
+}
+
+#second-icon {
+    padding-right: 10px;
+    color: white;
+}
+
+
+/* --------------------------------------------- IPAD SCREENS -----------------------------------------  */
+@media screen and (max-width: 1281px) {
+
+    .nav-text img {
+        width: 68px;
+        height: 30px;
+    }
+
+    .second {
+        top: 35px;
+        left: 28px;
+        font-size: 12px;
+    }
+
+    #star {
+        width: 9px;
+    }
+
+    nav input {
+        width: 50%;
+        margin-left: 20px;
+        position: relative;
+        left: 30px;
+    }
+
+    #search-icon {
+        position: relative;
+        right: -4px;
+        top: 1px;
+    }
+
+    nav ul {
+        justify-content: center;
+        position: relative;
+        right: 10px;
+    }
+
+    nav ul li {
+        margin-right: 1px;
+    }
+
+    #login-btn {
+        padding: 6px 28px;
+    }
+
+    ul a {
+        font-size: 1.0rem;
+    }
+}
+
+/* ----------------------------------------- SMALL SCREENS ----------------------------------------------------  */
+
+@media screen and (max-width: 541px) {
+    .nav-text img {
+        width: 45px;
+        height: 30px;
+        object-fit: contain;
+    }
+
+    .second {
+        top: 31px;
+        left: 23px;
+        font-size: 10px;
+    }
+
+    #star {
+        width: 13px;
+    }
+
+    nav input {
+        width: 210px;
+        margin-left: -15px;
+    }
+
+    #search-icon {
+        left: -40px;
+        top: 2px;
+        font-size: .8rem;
+    }
+
+    nav ul a {
+        color: white;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    #navbar.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 50%;
+        background-color: rgba(0, 0, 0, 0.885);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: -250px;
+    }
+
+    nav #menu {
+        display: block;
+        color: white;
+        position: relative;
+        right: 17px;
+        font-size: 21px;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        margin-top: 30px;
+        position: relative;
+        right: 25px;
+    }
+
+    #nav-btn {
+        background-color: transparent;
+    }
+
+    #login-btn {
+        background-color: transparent;
+        color: white;
+        border: none;
+    }
+
+    #login-btn:hover {
+        background-color: white;
+        color: black;
+    }
+    nav {
+        height: 45px;
+    }
+    .nav-text img {
+        width: 40px;
+        height: 15px;
+    }
+    .second {
+        top: 31px;
+        left: 23px;
+        font-size: 8px;
+    }
+
+    #star {
+        width: 7px;
+    }
+
+    nav #menu {
+        font-size: 17px;
+    }
+
+    nav input {
+        width: 227px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+  
+}

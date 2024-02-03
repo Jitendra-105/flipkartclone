@@ -1,0 +1,254 @@
+.product-list {
+    background-color: white;
+    cursor: pointer;
+    margin: 10px 10px 20px 0px;
+}
+
+.main-head1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 10px 1px lightgray;
+    padding: 6px 0px;
+}
+
+.product-list img {
+    width: 190px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.product-details {
+    padding: 0 10px;
+    font-weight: 800;
+}
+
+.product-discount {
+    padding: 0 10px;
+    color: green;
+    margin-top: 6px;
+}
+
+.other-details {
+    padding: 0px 10px;
+    margin-top: 6px;
+    color: grey;
+}
+
+.container {
+    display: flex;
+    justify-content: right;
+    margin-right: 6px;
+}
+
+.container .offer {
+    position: absolute;
+    left: 0;
+    height: 239px;
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    top: 420px;
+}
+
+.container .offer button {
+    background-color: rgba(0, 0, 255, 0.675);
+    color: white;
+    padding: 10px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#beauty-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 32%;
+    height: 260px;
+    padding: 0 10px;
+    background-image: linear-gradient(lightcyan, lightyellow);
+    cursor: pointer;
+}
+
+.beauty-img img {
+    height: 160px;
+    width: 185px;
+    mix-blend-mode: darken;
+    object-fit: contain;
+}
+
+.beauty-detail p {
+    color: grey;
+    margin-top: 10px;
+}
+
+.beauty-detail h2 {
+    margin-top: 10px;
+}
+
+.beauty-detail h2 span {
+    color: green;
+}
+#section-1 {
+    display: block;
+}
+
+#section-2 {
+    display: none;
+}
+
+#section-3 {
+    display: none;
+}
+
+/* --------------------------------------- ipad screen ---------------------------------  */
+@media screen and (max-width: 1281px) {
+    #beauty-section {
+        justify-content: space-evenly;
+    }
+
+    .main-container {
+        width: 32%;
+        height: 254px;
+    }
+
+    .beauty-detail h3 {
+        font-size: 14px;
+    }
+
+    .beauty-detail h2 {
+        font-size: 16px;
+    }
+
+    .beauty-detail p {
+        font-size: 13px;
+    }
+
+    .beauty-img img {
+        height: 110px;
+        width: 110px;
+    }
+
+    #section-1 {
+        display: none;
+    }
+
+    #section-2 {
+        display: none;
+    }
+
+    #section-3 {
+        display: block;
+    }
+}
+
+/* -------------------------------------- small screen -------------------------------------  */
+
+@media screen and (max-width: 541px) {
+
+    .container {
+        justify-content: flex-end;
+        padding: 0px;
+    }
+
+    .container .offer {
+        position: absolute;
+        left: 0;
+        height: 120px;
+        width: 84px;
+        top: 250px;
+        margin-left: 10px;
+    }
+
+    .container .offer button {
+        padding: 2px 11px;
+        margin-top: 2px;
+        font-size: 10px;
+    }
+
+    .container .offer span {
+        font-size: 10px;
+    }
+
+    #section-1 {
+        display: none;
+    }
+
+    #section-3 {
+        display: none;
+    }
+
+    #section-2 {
+        display: flex;
+    }
+
+    .product-list {
+        margin: 5px 3px;
+    }
+
+    .product-list img {
+        width: 65px;
+        height: 65px;
+        object-fit: contain;
+    }
+
+    .product-discount {
+        font-size: 12px;
+    }
+
+    .product-details {
+        font-size: 11px;
+    }
+
+    .other-details {
+        font-size: 12px;
+    }
+
+    .main-container {
+        width: 32%;
+        height: 133px;
+        padding: 0 6px;
+        margin-left: 10px;
+    }
+
+    .beauty-detail h3 {
+        font-size: 9px;
+        margin-left: 4px;
+        margin-top: 10px;
+    }
+
+    .beauty-detail h2 {
+        font-size: 10px;
+        margin-left: 4px;
+        margin-top: 10px;
+    }
+
+    .beauty-detail p {
+        font-size: 9px;
+        margin-left: 4px;
+        margin-top: 10px;
+    }
+
+    .beauty-img img {
+        height: 55px;
+        width: 50px;
+        mix-blend-mode: darken;
+        object-fit: contain;
+        padding: 0px 2px;
+    }
+
+}
