@@ -138,6 +138,22 @@ footer {
 /* ------------------------------------ small screen ---------------------------------------------------------  */
 
 @media screen and (max-width: 541px) {
+    footer {
+        padding: 10px 1px;
+    }
+    .main-footer a {
+        font-size: 8px;
+        font-weight: 400;
+        margin-left: 4px;
+
+    }
+    .other-container p {
+        color: white;
+        font-size: 8px;
+        margin: 12px 0px 0px 0px;
+        font-weight: 400;
+        padding: 1px;
+    }
 .bottom-line h6 {
     font-size: 6px;
 }

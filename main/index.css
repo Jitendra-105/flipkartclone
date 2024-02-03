@@ -76,6 +76,7 @@ nav #menu {
 #login-btn {
     padding: 10px 40px;
     color: blue;
+    border: none;
 }
 
 .remove {

@@ -81,6 +81,7 @@ button.btn-1 {
     background-color: #ffe11b;
     width: 45%;
     height: 60px;
+    border: none;
 
 }
 
@@ -88,17 +89,12 @@ button.btn-2 {
     background-color: #ff9f00;
     width: 45%;
     height: 60px;
+    border: none;
 }
 
 .shoesdetails {
     display: flex;
     justify-content: space-between;
-}
-
-.filters {
-    width: 15%;
-    margin-left: 10px;
-    box-shadow: 0px 1px 10px 4px lightgray;
 }
 
 .pro-details-1 {
@@ -172,96 +168,175 @@ button.btn-2 {
     right: 250px;
     top: 171px;
 }
-@media screen and (max-width: 541px) { 
-    
+
+/* --------------------------------------- ipad screen ------------------------------------------  */
+
+@media screen and (max-width: 1281px) {
+    .overall {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .main-con {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .pro-info {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .left-images {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .right-image {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .buttons {
+        width: 100%;
+        margin: 1rem 0 2rem 0;
+    }
+
+    #onlyvans {
+        height: 30vh;
+        width: 30vh;
+        top: 0px;
+        margin: 1rem 0;
+    }
+
+    #heart {
+        display: inline;
+        top: 50px;
+        left: 651px;
+    }
+
+    .pro-details-1 {
+        width: 100%;
+        margin-left: 0;
+        height: 54vh;
+    }
+
+    #compare {
+        font-size: 1rem;
+    }
+
+    #share {
+        font-size: 1rem;
+    }
+
+    .product-name-cart {
+        font-size: 1.5rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .pro-details-1 p {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .shoe-img {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .shoe-size {
+        margin-left: 1.1rem;
+    }
+
+    .shoe-size span {
+        margin-right: 1rem;
+    }
+
+    .shoe-size strong {
+        margin-right: 28px;
+    }
 }
+
 /* ------------------------------------------------ small screens ----------------------------------------------  */
 
 @media screen and (max-width: 541px) {
-    .left-images {
-        margin-top: 7px;
-    }
-
-    .left-images img {
-        height: 25px;
-        width: 25px;
-        object-fit: contain;
-    }
-
     section.overall {
         display: flex;
         justify-content: flex-start;
     }
 
     .main-con {
-        width: 30%;
-        margin-left: 6px;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-image {
+        width: 60%;
+        margin: 0 auto;
+    }
+    #onlyvans {
+        height: 175px;
+        width: 184px;
+        object-fit: cover;
+        position: relative;
+        top: 0px;
+        left: 2px;
+    }
+    .left-images img {
+        height: 45px;
+        width: 45px;
+        object-fit: cover;
     }
 
     #heart {
-        border: 2px solid black;
-        position: relative;
-        top: 0px;
-        left: -33px;
+        top: 39px;
+        left: 310px;
         border-radius: 50%;
         padding: 4px;
         border-color: lightgray;
         background-color: whitesmoke;
         color: gray;
         cursor: pointer;
-        font-size: 9px;
+        font-size: 12px;
     }
-
-    #onlyvans {
-        height: 61px;
-        width: 60px;
-        object-fit: contain;
-        position: relative;
-        top: 58px;
-        left: 2px;
+    button.btn-1 {
+        height: 40px;
+        width: 45%;
     }
-
-    button.btn-1 i {
-        padding: 1px;
-        font-size: 6px;
-        margin-right: 1px;
-    }
-
     .btn-1 span {
-        font-size: 5px;
-    }
-
-    button.btn-2 i {
-        padding: 1px;
-        font-size: 6px;
-        margin-right: 1px;
-
-
-    }
-
-    .btn-1 span {
-        font-size: 5px;
+        font-size: 12px;
         margin: 0px;
+        font-weight: 700;
     }
-
-    button.btn-1,
     button.btn-2 {
-        font-size: 6px;
+        height: 40px;
+        width: 45%;
+        font-weight: 700;
+
+    }
+    button.btn-2 {
+        font-size: 12px;
         font-family: 800;
         color: white;
         margin: 0px;
     }
-
-    button.btn-1 {
-        height: 21px;
-        width: 45%;
-        margin-left: 3px;
+    button.btn-1 i {
+        padding: 1px;
+        font-size: 12px;
+        margin-right: 1px;
     }
 
-    button.btn-2 {
-        height: 21px;
-        width: 45%;
-        margin: 0px;
+    button.btn-2 i {
+        padding: 1px;
+        font-size: 12px;
+        margin-right: 1px;
     }
 
     .buttons a {
@@ -270,13 +345,19 @@ button.btn-2 {
     }
 
     .pro-details-1 {
-        width: 65%;
+        width: 100%;
+        height: 60vh;
         margin-left: 4px;
         border-left: 1px solid lightgray;
         padding: 20px 2px 0px 10px;
         position: relative;
     }
-
+    .pro-details-1 img {
+        height: 35px;
+        width: 35px;
+        margin-right: 1px;
+        object-fit: cover;
+    }
     .pro-details-1 h4 {
         font-size: 13px;
     }
@@ -299,19 +380,19 @@ button.btn-2 {
         position: absolute;
         font-size: 10px;
         top: 12px;
-        right: 74px;
+        right: 110px;
     }
 
     #share {
         position: relative;
-        right: 13px;
+        right: 47px;
         font-size: 10px;
         bottom: 7px;
     }
 
     .pro-details-1 p {
-        font-size: 10px;
-        margin-bottom: 5px;
+        font-size: 11px;
+        margin-bottom: 10px;
     }
 
     .pro-details-1 p span {
@@ -324,21 +405,10 @@ button.btn-2 {
         object-fit: contain;
     }
 
-    .pro-details-1 img {
-        height: 30px;
-        width: 21px;
-        margin-right: 1px;
-    }
-
     .pro-details-1 h5 {
         font-size: 12px;
         margin: 8px 0px;
         font-weight: 600;
-    }
-
-    p.para {
-        font-size: 8px;
-        margin-bottom: 12px;
     }
 
     .pro-details-1 p .tc {
@@ -354,22 +424,20 @@ button.btn-2 {
         color: blue;
         font-size: 7px;
     }
-
     .shoe-size {
-        margin-top: 6px;
+        margin-top: 11px;
         margin-bottom: 10px;
     }
-
     #shoe-size {
-        font-size: 8px;
+       font-size: 11px;
     }
 
     .shoe-size strong {
         border: 1px solid lightgray;
         padding: 1px 7px;
         box-shadow: 0px 0px 1.5px 0px;
-        margin-right: 3px;
+        margin-right: 13px;
         font-weight: 600;
-        font-size: 9px;
+        font-size: 11px;
     }
 }

@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div.main-div {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(purple, orangered);
+    align-items: center;
+    justify-content: center;
+}
+.showPassword {
+    display: none;
+}
+.hidePassword {
+    display: none;
+}
+
+.login-left {
+    background-color: #2874f0;
+    height: 70%;
+    width: 18%;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.login-left h1 {
+    color: white;
+    padding: 40px;
+    font-size: 36px;
+}
+
+.login-left h4 {
+    color: white;
+    padding: 0 40px;
+    font-size: 20px;
+}
+
+.login-right {
+    background-color: white;
+    height: 70%;
+    width: 30%;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.right-info {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.right-info input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #2874f0;
+}
+
+.right-info input::-webkit-inner-spin-button,
+.right-info input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.right-info p {
+    padding: 0 30px;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    font-size: 14px;
+}
+
+.right-info p span {
+    color: blue;
+    cursor: pointer;
+}
+
+#continue {
+    width: 80%;
+    margin: 0px 30px 10px;
+    color: white;
+    background-color: #fb641b;
+    ;
+    border: none;
+    margin-top: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 0px lightcoral;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+#existing-user {
+    width: 80%;
+    margin: 10px 30px;
+    color: blue;
+    background-color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px 0px lightgray;
+    padding: 15px 20px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 1281px) {
+    .login-left {
+        width: 30%;
+    }
+
+    .login-right {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 541px) {
+    div.main-div {
+        flex-direction: column;
+    }
+
+    .login-left {
+        display: none;
+    }
+
+    .login-right {
+        height: 70%;
+        width: 96%;
+    }
+
+    .right-info p {
+        padding: 0 30px;
+        margin: 20px 0px 6px 0px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .login-style {
+        margin-top: 1rem;
+    }
+
+}
