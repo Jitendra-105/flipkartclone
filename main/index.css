@@ -73,7 +73,7 @@ nav #menu {
     display: none;
 }
 
-#login-btn {
+#logout-btn {
     padding: 10px 40px;
     color: blue;
     border: none;
@@ -150,7 +150,7 @@ li i {
         margin-right: 1px;
     }
 
-    #login-btn {
+    #logout-btn {
         padding: 6px 28px;
     }
 
@@ -230,13 +230,13 @@ li i {
         background-color: transparent;
     }
 
-    #login-btn {
+    #logout-btn {
         background-color: transparent;
         color: white;
         border: none;
     }
 
-    #login-btn:hover {
+    #logout-btn:hover {
         background-color: white;
         color: black;
     }
