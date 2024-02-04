@@ -42,7 +42,7 @@ LoginBtn.addEventListener("click", (e) => {
         remarks.innerText = "please create strong password"
       }  else {
         remarks.innerText = ""
-        window.location.href = "../main/index.html"; 
+        window.location.href = "../index.html"; 
       }
 })
 
