@@ -190,19 +190,19 @@
 
 .price-det h6 span {
     position: relative;
-    left: 220px;
-
+    left: 198px;
 }
 
 .price-det h6 #greencol {
     position: relative;
-    left: 193px;
+    left: 163px;
     color: green;
 }
 
 .rightside h5 span {
     position: relative;
-    left: 185px;
+    left: 183px;
+    font-size: 1rem;
 }
 
 .rightside #last {
@@ -240,81 +240,81 @@
 /* --------------------------------------- ipad screens ---------------------------------------  */
 
 @media screen and (max-width: 1281px) {
-.second {
-    margin-left: 1rem;
-}
+    .second {
+        margin-left: 1rem;
+    }
 
-.buynow {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    height: 100vh;
-}
+    .buynow {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        height: 100vh;
+    }
 
-.page-container {
-    width: 100%;
-}
+    .page-container {
+        width: 100%;
+    }
 
-.login-page input {
-    width: 90%;
-    margin: 1rem auto 0 auto;
-    display: block;
-}
+    .login-page input {
+        width: 90%;
+        margin: 1rem auto 0 auto;
+        display: block;
+    }
 
-.add-form {
-    width: 100%;
-    margin-left: 0px;
-}
+    .add-form {
+        width: 100%;
+        margin-left: 0px;
+    }
 
-.add-form .size {
-    width: 90%;
-    margin: 1rem auto;
-    padding: 8px 2px;
-}
+    .add-form .size {
+        width: 90%;
+        margin: 1rem auto;
+        padding: 8px 2px;
+    }
 
-.add-form textarea {
-    width: 90%;
-    margin: 0 auto;
-    display: block;
-}
+    .add-form textarea {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
 
-.buy-btn {
-    margin-left: 53px;
-}
+    .buy-btn {
+        margin-left: 53px;
+    }
 
-.item-details {
-    margin-left: 10px;
-}
+    .item-details {
+        margin-left: 10px;
+    }
 
-.item-details p {
-    margin: 0px;
-    font-size: .8rem;
-}
+    .item-details p {
+        margin: 0px;
+        font-size: .8rem;
+    }
 
-.item-details span {
-    font-size: .7rem;
-}
+    .item-details span {
+        font-size: .7rem;
+    }
 
-.item-details img {
-    height: 30px;
-    width: 30px;
-}
+    .item-details img {
+        height: 30px;
+        width: 30px;
+    }
 
-.item-details p {
-    font-size: .7rem;
-}
+    .item-details p {
+        font-size: .7rem;
+    }
 
-.item-details button {
-    margin: .5rem 0;
-    font-size: .7rem;
-}
+    .item-details button {
+        margin: .5rem 0;
+        font-size: .7rem;
+    }
 
-.right-details p {
-    font-size: .6rem;
-}
+    .right-details p {
+        font-size: .6rem;
+    }
 }
 
 @media screen and (max-width: 541px) {
@@ -324,17 +324,38 @@
         height: 245px;
         width: 100%;
     }
-    .price-det h6 span {
-        position: relative;
-        left: 180px;
+
+    .rightside h5 {
+        padding: 10px 20px;
+        font-size: .8rem;
     }
-    .price-det h6 #greencol {
-        position: relative;
-        left: 143px;
-        color: green;
-    }
+
     .rightside h5 span {
         position: relative;
-        left: 157px;
+        left: 127px;
     }
+
+    .price-det h6 {
+        padding: 3px 20px;
+        margin: 10px 0px;
+        font-size: .8rem;
+    }
+
+    .price-det h6 span {
+        position: relative;
+        left: 120px;
+    }
+
+    .price-det h6 #greencol {
+        position: relative;
+        left: 96px;
+        color: green;
+    }
+
+    .rightside #last {
+        padding: 20px;
+        color: green;
+        font-size: .8rem;
+    }
+
 }
