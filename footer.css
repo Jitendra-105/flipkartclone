@@ -42,6 +42,11 @@ footer {
 
 }
 
+.part-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
 /* hr and bottomline  */
 .bottom-line {
     display: flex;
@@ -152,7 +157,14 @@ footer {
         font-size: 8px;
         margin: 12px 0px 0px 0px;
         font-weight: 400;
-        padding: 1px;
+        padding: 8px;
+    }
+    .part-2 {
+        flex-direction: column;
+    }
+    .other-container #para-2 {
+        margin: 12px 2px 0px 2px;
+        padding: 8px;
     }
 .bottom-line h6 {
     font-size: 6px;
